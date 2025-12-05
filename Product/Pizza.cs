@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PizzaBuilderDemo
+namespace Builder.Product
 {
     public class Pizza
     {

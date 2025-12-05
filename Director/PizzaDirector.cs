@@ -1,19 +1,24 @@
-﻿namespace PizzaBuilderDemo
+﻿using Builder.Builders;
+
+namespace Builder.Director
 {
     public class PizzaDirector
     {
         private IPizzaBuilder _builder;
 
-        public IPizzaBuilder Builder {
+        public IPizzaBuilder Builder
+        {
             set { _builder = value; }
         }
 
-        public void BuildBasicPizza() {
+        public void BuildBasicPizza()
+        {
             _builder.AddDough();
             _builder.AddSauce();
         }
 
-        public void BuildFullFeaturedPizza() {
+        public void BuildFullFeaturedPizza()
+        {
             _builder.AddDough();
             _builder.AddSauce();
             _builder.AddToppings();
